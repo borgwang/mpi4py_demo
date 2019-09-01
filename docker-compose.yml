@@ -1,0 +1,53 @@
+version: '2'
+
+services:
+
+  node-0:
+    container_name: node-0
+    image: mpi4py:latest
+    volumes:
+      - /home/abbo/workspace/mpi4py_demo:/mpi4py_demo
+    command: bash -c "bash /mpi4py_demo/scripts/container_setup.sh 4 1"
+    hostname: node-0
+    expose:
+      - 22
+
+  node-1:
+    container_name: node-1
+    image: mpi4py:latest
+    volumes:
+      - /home/abbo/workspace/mpi4py_demo:/mpi4py_demo
+    command: bash -c "bash /mpi4py_demo/scripts/container_setup.sh 4"
+    hostname: node-1
+    expose:
+      - 22
+
+  node-2:
+    container_name: node-2
+    image: mpi4py:latest
+    volumes:
+      - /home/abbo/workspace/mpi4py_demo:/mpi4py_demo
+    command: bash -c "bash /mpi4py_demo/scripts/container_setup.sh 4"
+    hostname: node-2
+    expose:
+      - 22
+
+  node-3:
+    container_name: node-3
+    image: mpi4py:latest
+    volumes:
+      - /home/abbo/workspace/mpi4py_demo:/mpi4py_demo
+    command: bash -c "bash /mpi4py_demo/scripts/container_setup.sh 4"
+    hostname: node-3
+    expose:
+      - 22
+
+  node-4:
+    container_name: node-4
+    image: mpi4py:latest
+    volumes:
+      - /home/abbo/workspace/mpi4py_demo:/mpi4py_demo
+    command: bash -c "bash /mpi4py_demo/scripts/container_setup.sh 4"
+    hostname: node-4
+    expose:
+      - 22

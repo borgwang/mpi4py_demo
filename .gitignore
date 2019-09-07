@@ -125,3 +125,4 @@ dmypy.json
 .pyre/
 
 scripts/remote_sync.sh
+.idea
